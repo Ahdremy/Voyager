@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Website</title>
+</head>
+<body>
+
+    <section class="showcase active">
+        <header>
+            <h2 class="logo">Voyager</h2>
+            <div class="toggle active"></div>
+        </header>
+
+        <video src="./images/explore.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring the World</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod molestias voluptatem distinctio quis hic esse iusto nihil voluptate optio veniam?</p>
+            <a href="">Explore</a>
+        </div>
+
+        <div class="links">
+            <ul class="socials">
+                <li><a href="#"><img src="./images/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="./images/instagram.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="./images/twitter.png" alt="Twitter"></a></li>
+            </ul>
+        </div>
+        
+    </section>
+
+    <section class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Bookings</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </section>
+    
+    <script>
+        
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+
+
+    </script>
+</body>
+</html>
